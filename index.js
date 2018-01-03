@@ -11,6 +11,13 @@ const c = new Crawler({
       // $ is Cheerio by default
       //a lean implementation of core jQuery designed specifically for the server
       console.log($('title').text());
+
+      const result = JSON.stringify({
+        title: $('title')
+          .text()
+          .replace('\n', ''),
+        // body: $('body').text(),
+      });
     }
     done();
   },
