@@ -1,0 +1,12 @@
+{
+  "name": "instagram-crawler",
+  "version": "0.1.0",
+  "description": "Instagram Crawler Node",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "https://github.com/rodrigooler/instagram-crawler.git",
+  "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>",
+  "dependencies": {
+    "crawler": "^1.1.2"
+  }
+}
