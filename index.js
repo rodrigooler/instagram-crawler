@@ -6,7 +6,7 @@ const crawler = new Crawler({
     if (error) {
       console.log(error);
     } else {
-			const { headers, rawHeaders, statusCode, $ } = res;
+			const { headers, rawHeaders, statusCode, body } = res;
 
       const result = JSON.stringify({
 				statusCode,
@@ -16,15 +16,11 @@ const crawler = new Crawler({
         //   .text()
         //   .replace('\n', ''),
 			});
-
-			console.log(`==============================`);
-      console.log(result);
-      console.log(`==============================`);
     }
     done();
   },
 });
 
 // Queue just one URL, with default callback
-const result = crawler.queue('http://www.instagram.com/rodrigooler');
+crawler.queue('http://www.instagram.com/rodrigooler');
 
