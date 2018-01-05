@@ -7,6 +7,7 @@
   "repository": "https://github.com/rodrigooler/instagram-crawler.git",
   "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>",
   "dependencies": {
-    "crawler": "^1.1.2"
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.83.0"
   }
 }
